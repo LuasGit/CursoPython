@@ -10,3 +10,4 @@ print(f'Price: {price}$')
 print('Amount:', amount)
 print('Available:',available)
 
+    
