@@ -1,4 +1,3 @@
-
 nombre_empleado = input('Introduzca el nombre del empleado: ')
 edad_empleado = int(input('Introduzca la edad del empleado: '))
 salario = float(input('Introduzxa el salario del empleado: '))
