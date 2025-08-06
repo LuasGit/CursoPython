@@ -1,0 +1,10 @@
+receta_name = input('Ingrese el nombre de la receta: ')
+ingredients = input('Ingrese los ingredientes: ')
+time_preparation = input('ingre el tiempo de cocina(min): ')
+difficulty = input('Ingrese la dificultad: ')
+
+print('-----------------------')
+print(f'La receta se llama: {receta_name}')
+print(f'Los ingredientes son: {ingredients}')
+print(f'Tiempo de preparacion: {time_preparation}')
+print(f'Dificultad: {difficulty}')
