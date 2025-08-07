@@ -14,7 +14,13 @@ for i, producto in enumerate(products):
 
 #Buscar por id
 id_buscar = input('Id a buscar: ').strip()
+producto_encontrado = None
 for producto in products:
     if producto.get("Id") == id_buscar:
-        print(products[producto])
+        producto_encontrado = producto
         break
+
+if producto_encontrado is not None:
+    print(producto_encontrado)
+else: 
+    print('El producto no fue encontrado')
