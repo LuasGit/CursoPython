@@ -1,19 +1,37 @@
 class Aritmetica:
-    def __init__(self, operador1, operador2):
-        self.operador1 = operador1
-        self.operador2 = operador2
+    #Python solo toma el ultimo metodo
+    # def __init__(self, _operador1):
+    #     self._operador1 = _operador1
+
+    def __init__(self, _operador1= None, _operador2 = None):
+        self._operador1 = _operador1
+        self._operador2 = _operador2
     
     def sumar(self):
-        print(self.operador1 + self.operador2)
+        print(self._operador1 + self._operador2)
     
     def restar(self):
-        print(self.operador1 - self.operador2)
+        print(self._operador1 - self._operador2)
 
     def multiplicar(self):
-        print(self.operador1 * self.operador2)
+        print(self._operador1 * self._operador2)
     
     def dividir(self):
-        print(self.operador1 / self.operador2)
+        print(self._operador1 / self._operador2)
+
+    @property
+    def operador1(self):
+        return self._operador1
+    @property
+    def operador2(self):
+        return self._operador2
+    @operador1.setter
+    def operador1(self, value):
+        self._operador1 = value
+    @operador2.setter
+    def operador2(self, value):
+        self._operador2 = value
+
 
 if __name__ == "__main__":
     a = Aritmetica(23 , 43)
@@ -24,3 +42,4 @@ if __name__ == "__main__":
     a.dividir()
     b.restar()
     b.multiplicar()
+    
